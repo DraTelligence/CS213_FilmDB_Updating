@@ -9,7 +9,7 @@ clean_data/*.json
 report/*
 
 # original data
-original_data/*
+original_data/*.csv
 
 # generated SQL
 clean_sql/*.sql
