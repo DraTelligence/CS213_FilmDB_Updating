@@ -1,0 +1,6 @@
+# data atained from TMDB
+raw_data/*.json
+clean_data/*.json
+
+# environment variables
+.env
