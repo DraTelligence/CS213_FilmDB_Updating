@@ -3,6 +3,7 @@ import json
 import time
 import os
 import math
+from dotenv import load_dotenv
 
 # 获取路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -10,7 +11,8 @@ OUTPUT_FILE = os.path.join(current_dir, '..', 'raw_data', 'raw_movies_data_tst2.
 OUTPUT_FILE = os.path.normpath(OUTPUT_FILE)
 
 # --- 配置区 ---
-API_KEY = "9dbb23330ed549c60ffbc45b60cd74d8"  # 记得替换
+load_dotenv()
+API_KEY = os.getenv("TMDB_API_KEY")
 START_YEAR = 2025               # 起始年份
 END_YEAR = 2025                 # 结束年份
 MOVIES_PER_YEAR = 20           # 每年目标抓取数量 (Top 250)
