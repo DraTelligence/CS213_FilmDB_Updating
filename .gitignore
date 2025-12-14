@@ -4,3 +4,12 @@ clean_data/*.json
 
 # environment variables
 .env
+
+# reports
+report/*
+
+# original data
+original_data/*
+
+# generated SQL
+clean_sql/*.sql
